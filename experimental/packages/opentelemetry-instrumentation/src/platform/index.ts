@@ -14,4 +14,8 @@
  * limitations under the License.
  */
 
-export * from './node';
+let nodeImport = null;
+if (window === undefined) {
+    nodeImport = import('./node');
+}
+export default nodeImport;
