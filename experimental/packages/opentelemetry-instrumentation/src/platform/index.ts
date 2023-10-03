@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-let nodeImport = null;
+let nodeImport = {};
 if (window === undefined) {
     nodeImport = import('./node');
 }
